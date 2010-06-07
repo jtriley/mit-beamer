@@ -23,11 +23,16 @@ Generating the presentation:
 
     $ vim $HOME/mit-beamer/slides.tex
 
-2. Then change to the 'out' directory and run make.sh::
+2. Then change to the 'out' directory and run make.sh to generate a presentation PDF::
 
     $ cd $HOME/mit-beamer/out
     $ ./make.sh
 
-3. If you want to preview the presentation after generating (requires xpdf or okular)::
+3. You can then view the resulting pdf, named slides.pdf, in the 'out' directory::
+
+    $ xpdf $HOME/mit-beamer/out/slides.pdf
+
+4. To do this automatically after running make.sh pass the -p option (requires xpdf or okular)::
 
     $ ./make.sh -p
+
