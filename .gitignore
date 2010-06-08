@@ -7,3 +7,4 @@
 .*.swp
 *.out
 out
+build-daemon.pid
