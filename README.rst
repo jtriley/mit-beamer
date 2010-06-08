@@ -9,6 +9,7 @@ Dependencies:
 -------------
 * latex-beamer class 3.0.7 (http://latex-beamer.sourceforge.net)
 * texlive-latex 2008+ (http://www.tug.org/texlive/)
+* automake (optional, used to run pdflatex commands)
 
 Install:
 --------
@@ -23,16 +24,19 @@ Generating the presentation:
 
     $ vim $HOME/mit-beamer/slides.tex
 
-2. Then change to the 'out' directory and run make.sh to generate a presentation PDF::
+2. Then change to the mit-beamer directory and run make to generate a presentation PDF::
 
-    $ cd $HOME/mit-beamer/out
-    $ ./make.sh
+    $ cd $HOME/mit-beamer
+    $ make
 
 3. You can then view the resulting pdf, named slides.pdf, in the 'out' directory::
 
     $ xpdf $HOME/mit-beamer/out/slides.pdf
 
-4. To do this automatically after running make.sh pass the -p option (requires xpdf or okular)::
+4. You can also use make to do this automatically with either xpdf, okular, or acroread::
 
-    $ ./make.sh -p
+    $ make view-xpdf
+    $ make view-okular
+    $ make view-acroread
 
+5. The above "make view-*" commands will automatically build $HOME/mit-beamer/out/slides.pdf if necessary
