@@ -1,5 +1,5 @@
-export TEXINPUTS:=${TEXINPUTS}:slides:.
-out/main.pdf: main.tex
+export TEXINPUTS:=${TEXINPUTS}:slides:imgs:code:.
+out/main.pdf: main.tex slides/*.tex
 	# you need to run pdflatex command twice if you're having issues 
 	# getting TOC or top progress bar to show up in resulting pdf
 	mkdir -p out
