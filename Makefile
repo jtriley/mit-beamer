@@ -1,17 +1,18 @@
-out/slides.pdf: slides.tex
+export TEXINPUTS:=${TEXINPUTS}:slides:.
+out/main.pdf: main.tex
 	# you need to run pdflatex command twice if you're having issues 
 	# getting TOC or top progress bar to show up in resulting pdf
 	mkdir -p out
-	pdflatex --output-directory=out slides.tex
+	pdflatex --output-directory=out main.tex
 
-view-xpdf: out/slides.pdf
-	xpdf out/slides.pdf & disown
+view-xpdf: out/main.pdf
+	xpdf out/main.pdf & disown
 
-view-okular: out/slides.pdf
-	okular out/slides.pdf & disown
+view-okular: out/main.pdf
+	okular out/main.pdf & disown > /dev/null 2>&1
 
-view-acroread: out/slides.pdf
-	acroread out/slides.pdf & disown
+view-acroread: out/main.pdf
+	acroread out/main.pdf & disown
 
 clean:
 	rm -rf out

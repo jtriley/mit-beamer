@@ -1,0 +1,54 @@
+\documentclass[english,compress]{beamer}
+\input{settings}
+
+\batchmode
+
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of}
+
+\usetheme{Berlin}
+\usecolortheme{mit}
+
+\title[StarCluster] 
+{%
+  StarCluster - NumPy/SciPy Computing in the Cloud%
+}
+
+\title{StarCluster - NumPy/SciPy Computing on Amazon's Elastic Compute Cloud (EC2)} 
+\author{Justin Riley}
+\date[SciPy 2010]
+{Python for Scientific Computing Conference, 2010}
+\pgfdeclareimage[height=0.5cm]{mit-logo}{mit-logo.pdf}
+\logo{\pgfuseimage{mit-logo}\hspace*{0.3cm}}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\beamerdefaultoverlayspecification{<+->}
+% -----------------------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------------------------------------
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\section{Introduction}
+\subsection{StarCluster Overview}
+\input{starcluster-features}
+\input{starcluster-plugins}
+\subsection{Amazon EC2 Basics}
+\input{aws-basics}
+% -----------------------------------------------------------------------------
+\section{Conclusions}
+\subsection{Where can I learn more?}
+\input{finalslide}
+% -----------------------------------------------------------------------------
+\end{document}
