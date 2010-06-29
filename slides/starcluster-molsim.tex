@@ -1,3 +1,17 @@
 \begin{frame}{StarMolSim\dots}
-	TODO
+\begin{figure}
+\begin{center}
+\hspace*{-1.2cm}
+\begin{tikzpicture}
+\node (laptop) [label=below:User] {\includegraphics[width=1in]{laptop.png}};
+\node (molsim) [right=of laptop, label=below:MolSim using GenePattern] {\includegraphics[width=2in]{molsim-screenshot.png}};
+\node (cloud) [right=of molsim, label=below:EC2] {\includegraphics[width=1in]{cloud.png}};
+\draw [->,thick] (laptop) to (molsim)
+  node [pos=0.5,above=0.2cm] {WEB};
+\draw [->,thick] (molsim) to (cloud)
+  node [pos=0.5,above=0.2cm] {SSH};
+\end{tikzpicture}
+\end{center}
+\caption{\label{fig:SRD} StarMolSim Overview}
+\end{figure}
 \end{frame}

@@ -1,3 +1,17 @@
 \begin{frame}{StarHPC\dots}
-	TODO
+\begin{figure}
+\begin{center}
+\hspace*{-1.2cm}
+\begin{tikzpicture}
+\node (laptop) [label=below:User] {\includegraphics[width=1in]{laptop.png}};
+\node (cloud) [right=of laptop, label=below:EC2] {\includegraphics[width=1in]{cloud.png}};
+\node (screenshot) [right=of cloud, label=below:Virtual Desktop] {\includegraphics[width=2in]{hpc-screenshot.png}};
+\draw [->,thick] (laptop) to (cloud)
+  node [pos=0.5,above=0.2cm] {SSH};
+\draw [->,thick] (cloud) to (screenshot)
+  node [pos=0.5,above=0.2cm] {VNC};
+\end{tikzpicture}
+\end{center}
+\caption{\label{fig:SRD} StarHPC Overview}
+\end{figure}
 \end{frame}
