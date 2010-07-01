@@ -1,5 +1,5 @@
 export TEXINPUTS:=${TEXINPUTS}:slides:imgs:code:.
-out/main.pdf: *.tex slides/*.tex
+out/main.pdf: *.tex slides/*.tex code/*.py
 	# you need to run pdflatex command twice if you're having issues 
 	# getting TOC or top progress bar to show up in resulting pdf
 	mkdir -p out

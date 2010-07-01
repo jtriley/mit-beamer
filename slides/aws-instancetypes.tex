@@ -1,35 +1,45 @@
 \begin{nologo}
 \begin{frame}{Standard Instances}
-%\begin{definition}
-%1 Compute Unit (CU) = 1.0-1.2 2007 Intel Xeon Processor\\
-%\end{definition}
+\begin{definition}
+1 Compute Unit (CU) = 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor.
+\end{definition}
 \begin{center}
 	\small
 	\begin{tabular}{ l  l  l  l  l  l  l }
-	  Instance & Arch & CPU (GHZ) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
-	  Small     & 32bit & 1CU (x1) & 1.7GB & 160GB & Moderate & \$0.085 \pause\\ [1.5ex]
-	  Large     & 64bit & 2CU (x2) & 7.5GB & 860GB & High & \$0.34 \pause\\ [1.5ex]
-	  X-Large   & 64bit & 2.5CU (x4) & 15GB & 1.69TB & High & \$0.68 \\ [1.5ex]
+	  Instance & Arch & CPU (CU) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
+	  Small     & 32bit & 1 (x1) & 1.7GB & 160GB & Moderate & \$0.085 \\ [1.5ex]
+	  Large     & 64bit & 2 (x2) & 7.5GB & 860GB & High & \$0.34 \\ [1.5ex]
+	  X-Large   & 64bit & 2 (x4) & 15GB & 1.69TB & High & \$0.68 \\ [1.5ex]
 	\end{tabular}
 \end{center}
 \end{frame}
 
 \begin{frame}{High-Memory Instances}
+\begin{definition}
+1 Compute Unit (CU) = 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor.
+\end{definition}
+\begin{center}
 	\small
 	\begin{tabular}{ l  l  l  l  l  l  l }
-	  Instance & Arch & CPU (GHZ) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
-	  X-Large     & 64bit & 1.0-1.2 (x1) & 17.1GB & 420GB & Moderate & \$0.50 \pause\\ [1.5ex]
-	  2X-Large    & 64bit & 2.0-2.4 (x4) & 34.2GB & 850GB & High & \$1.20 \pause\\ [1.5ex]
-	  4X-Large    & 64bit & 2.0-2.4 (x4) & 68.4GB & 1.69TB & High & \$2.40 \\ [1.5ex]
+	  Instance & Arch & CPU (CU) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
+	  X-Large     & 64bit & 3.25 (x2) & 17.1GB & 420GB & Moderate & \$0.50 \\ [1.5ex]
+	  2X-Large    & 64bit & 3.25 (x4) & 34.2GB & 850GB & High & \$1.20 \\ [1.5ex]
+	  4X-Large    & 64bit & 3.25 (x8) & 68.4GB & 1.69TB & High & \$2.40 \\ [1.5ex]
 	\end{tabular}
+\end{center}
 \end{frame}
 
 \begin{frame}{High-CPU Instances}
+\begin{definition}
+1 Compute Unit (CU) = 1.0-1.2 GHz 2007 Opteron or 2007 Xeon processor.
+\end{definition}
+\begin{center}
 	\small
 	\begin{tabular}{ l  l  l  l  l  l  l }
-	  Instance & Arch & CPU (GHZ) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
-	  Medium   & 32bit & 1.0-1.2 (x1) & 1.7GB & 160GB & Moderate & \$0.17 \pause\\ [1.5ex]
-	  X-Large  & 64bit & 2.0-2.4 (x4) & 15GB & 1.69TB & High & \$0.68 \\ [1.5ex]
+	  Instance & Arch & CPU (CU) & RAM & Storage & I/O & Cost/hr \\\hline \\ [-1.5ex]
+	  Medium   & 32bit & 2.5 (x2) & 1.7GB & 160GB & Moderate & \$0.17 \\ [1.5ex]
+	  X-Large  & 64bit & 2.5 (x8) & 15GB & 1.69TB & High & \$0.68 \\ [1.5ex]
 	\end{tabular}
+\end{center}
 \end{frame}
 \end{nologo}

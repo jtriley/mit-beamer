@@ -1,3 +1,22 @@
 \begin{frame}{Elastic Block Storage}
-	TODO
+    \begin{itemize}
+        \item Attached (mounted) to the master node 
+	\item NFS-shared to all nodes
+        \item All data written to EBS is persisted automatically
+    \end{itemize}
 \end{frame}
+
+\begin{nologo}
+\begin{frame}{Creating New EBS Volume with StarCluster}
+    How do we create new EBS volumes?
+    \lstinputlisting[numbers=left, basicstyle=\footnotesize]{ebs.py}
+    \begin{itemize}
+        \item This command automatically handles:
+	\item Launching a "host" instance
+	\item Attaching the volume to the instance
+	\item Partitioning the entire volume into a single partition
+	\item Formatting the volume with ext3 filesystem
+        \item Terminating the host instance
+    \end{itemize}
+\end{frame}
+\end{nologo}
